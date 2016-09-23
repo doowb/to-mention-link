@@ -45,6 +45,8 @@ console.log(toMention('- @doowb\n- @jonschlinkert', {url: 'https://twitter.com'}
 //=> - [jonschlinkert](https://twitter.com/jonschlinkert)
 ```
 
+## Renderers
+
 Renderers are functions that take the mention, a url, and an optional title and return a formatted link string.
 Included renders are "md" and "html". "md" is provided by [markdown-link](https://github.com/jonschlinkert/markdown-link). Additional renderers may be added and used
 by passing their name on the `options.renderer` option.

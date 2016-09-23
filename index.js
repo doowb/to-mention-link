@@ -111,11 +111,6 @@ module.exports = toMention;
 
 /**
  * Exposes `.renderers` object.
- *
- * Renderers are functions that take the mention, a url, and an optional title and return a formatted link string.
- * Included renders are "md" and "html". "md" is provided by [markdown-link][]. Additional renderers may be added and used
- * by passing their name on the `options.renderer` option.
- * @api public
  */
 
 module.exports.renderers = renderers;
