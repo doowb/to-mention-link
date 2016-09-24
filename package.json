@@ -1,6 +1,6 @@
 {
   "name": "to-mention-link",
-  "description": "Create a link from an @ mention.",
+  "description": "Create links from @ mentions.",
   "version": "0.1.0",
   "homepage": "https://github.com/doowb/to-mention-link",
   "author": "Brian Woodward (https://github.com/doowb)",
@@ -20,19 +20,32 @@
   "scripts": {
     "test": "mocha"
   },
-  "keywords": [
-    "link",
-    "mention",
-    "to"
-  ],
   "dependencies": {
     "extend-shallow": "^2.0.1",
-    "markdown-link": "^0.1.1"
+    "markdown-link": "^0.1.1",
+    "parse-mentions": "^0.1.0"
   },
   "devDependencies": {
     "gulp-format-md": "^0.1.10",
     "mocha": "^3.0.2"
   },
+  "keywords": [
+    "@-mention",
+    "@-mentions",
+    "@mention",
+    "@mentions",
+    "at-mention",
+    "at-mentions",
+    "mention",
+    "mention-link",
+    "mention-links",
+    "mentions",
+    "mentions-link",
+    "mentions-links",
+    "parse",
+    "to-mention-links",
+    "to-mentions-links"
+  ],
   "verb": {
     "toc": false,
     "layout": "default",
@@ -46,7 +59,9 @@
       "reflinks": true
     },
     "related": {
-      "list": []
+      "list": [
+        "parse-mentions"
+      ]
     },
     "reflinks": [
       "verb",
