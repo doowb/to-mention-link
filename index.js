@@ -54,7 +54,7 @@ function toMention(str, options) {
 
   if (typeof opts.renderer === 'string') {
     if (!renderers.hasOwnProperty(opts.renderer)) {
-      throw new Error(`expected "renderer" to be one of the following [${Object.keys(renderers).join(', ')}]`);
+      throw new Error('expected "renderer" to be one of the following [' + Object.keys(renderers).join(', ') + ']');
     }
     renderer = renderers[opts.renderer];
   }
@@ -64,7 +64,7 @@ function toMention(str, options) {
   }
 
   return parse(str, function(mention) {
-    return renderer(`@${mention}`, join(opts.url, mention), title(mention));
+    return renderer('@' + mention, join(opts.url, mention), title(mention));
   });
 }
 
@@ -86,7 +86,7 @@ function htmlLink(mention, href, title) {
   }
 
   title = title ? ' alt="' + title + '"' : '';
-  return `<a href="${href}"${title}>${mention}</a>`;
+  return "<a href=\"" + href + "\"" + title + ">" + mention + "</a>";
 }
 
 /**
